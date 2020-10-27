@@ -1,38 +1,165 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 35px;
+  background: linear-gradient(to bottom right, rgba(3,18,33,1) 0%, rgba(20,41,99,1) 87%);
+}
+
+#root{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.app{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  color: white;
+  font-size: 65px;
+  text-align: center;
+  font-family: 'Sansita Swashed', cursive;
+}
+
+.contain-list{
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 4vw;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.contain-list *{
+}
+
+.scroll-btn{
+  width: 150px;
+  height: 150px;
+  background: rgba(0,0,0,0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 80px;
+  border: none;
+  outline: none;
+  cursor:pointer;
+}
+
+.scroll-btn i{
+  color: white;
+  opacity: 0.5;
+}
+
+.empty-item{
+  background-color: rgba(3,18,33,0.7);
+  width: 60vw;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item{
+  background-size: cover;
+  width: 60vw;
+  height: 70vh;
+  display: relative;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.in-item{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.delete-proj-btn{
+  position: absolute;
+  margin-left: 5vh;
+  margin-top: 4vh;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0);
+}
+
+.plus-btn{
+  background: rgba(0,0,0,0);
+  color: rgba(255,255,255,0.7);
+  border: none;
+  outline: none;
+  font-size: 70px;
+  cursor: pointer;
+}
+
+.proj-text{
+  color: hsl(16,100%,30%);
+  font-size: 55px;
+  font-family: 'Ubuntu', sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.new-proj-form{
+  color: white;
+  font-size: 30px;
+  font-family: 'Ubuntu', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.new-proj-form div{
+  margin-bottom: 20px;
+}
+
+.new-proj-form input{
+  outline: none;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid white;
+  font-size: 30px;
   color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+#txt-input{
+  width: 250px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#txt-color-input{
+  width: 170px;
 }
+
+.new-proj-form button{
+  border: 1px solid white;
+  outline: none;
+  background: rgba(0,0,0,0);
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 5px;
+}
+
+.new-proj-form button:hover{
+
+  color: rgba(255,255,255,0.7);
+}
+
+#cancel-proj{
+  margin-right: 35px;
+}
+
+
